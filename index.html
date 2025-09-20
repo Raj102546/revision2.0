@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Heartfelt Apology</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600;700&family=Great+Vibes&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Floating particles background -->
+    <div class="particles-container">
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+    </div>
+
+    <!-- Floating hearts background -->
+    <div class="hearts-container">
+        <div class="floating-heart">💖</div>
+        <div class="floating-heart">💕</div>
+        <div class="floating-heart">💗</div>        
+        <div class="floating-heart">💝</div>
+        <div class="floating-heart">💖</div>
+        <div class="floating-heart">💕</div>
+    </div>
+
+    <!-- Landing Screen -->
+    <section id="landing" class="screen active">
+        <div class="container">
+            <div class="envelope-container">
+                <div class="envelope" id="envelope">
+                    <div class="envelope-flap"></div>
+                    <div class="envelope-body">
+                        <div class="tear-line"></div>
+                        <div class="tear-text">Tear Here</div>
+                        <div class="envelope-sparkles">
+                            <div class="sparkle"></div>
+                            <div class="sparkle"></div>
+                            <div class="sparkle"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p class="landing-subtitle">Click to open my heart...</p>
+        </div>
+    </section>
+
+    <!-- Letter Screen -->
+    <section id="letter" class="screen">
+        <div class="container">
+            <div class="letter-container">
+                <div class="letter-paper">
+                    <div class="letter-header">
+                        <div class="letter-decoration">💕</div>
+                    </div>
+                    <div class="letter-content">
+                        <div class="typing-text" id="letterText"></div>
+                    </div>
+                    <div class="letter-footer">
+                        <div class="letter-decoration">💖</div>
+                    </div>
+                </div>
+                <button class="btn btn--primary continue-btn" id="continueBtn" style="display: none;">
+                    Continue to My Question 💌
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Question Screen -->
+    <section id="question" class="screen">
+        <div class="container">
+            <div class="question-container">
+                <h2 class="question-title">Are you still angry with me?</h2>
+                <div class="buttons-container">
+                    <button class="btn btn--primary yes-btn" id="yesBtn">Yes 😔</button>
+                    <button class="btn btn--secondary no-btn" id="noBtn">No 😊</button>
+                </div>
+                <div class="attempt-counter">
+                    <div class="hearts-indicator" id="heartsIndicator"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Response Cards -->
+    <div class="modal hidden" id="yesModal">
+        <div class="modal-overlay" id="modalOverlay"></div>
+        <div class="modal-content">
+            <div class="card response-card">
+                <div class="card-header">
+                    <h3>✨You're So Kind, Yrr!✨</h3>
+                </div>
+                <div class="card-body">
+                    <p id="yesResponseText"></p>
+                    <div class="card-sparkles">
+                        <div class="sparkle"></div>
+                        <div class="sparkle"></div>
+                        <div class="sparkle"></div>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <button class="btn btn--primary" id="closeYesModal">Please Unblock me🥺🙏</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal hidden" id="finalModal">
+        <div class="modal-overlay" id="finalModalOverlay"></div>
+        <div class="modal-content">
+            <div class="card response-card final-card">
+                <div class="card-header">
+                    <h3>Sorry Yaarr! 🥺💕</h3>
+                </div>
+                <div class="card-body">
+                    <p id="finalResponseText"></p>
+                    <div class="celebration-hearts">
+                        <div class="celebration-heart">💖</div>
+                        <div class="celebration-heart">💕</div>
+                        <div class="celebration-heart">💗</div>
+                        <div class="celebration-heart">💝</div>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <button class="btn btn--primary" id="closeFinalModal">Fresh Start 🌟</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Success Screen -->
+    <section id="success" class="screen">
+        <div class="container">
+            <div class="success-container">
+                <div class="success-icon">🎉</div>
+                <h1 class="success-title">You're Amazing! 💖</h1>
+                <p class="success-message" id="successMessage"></p>
+                <div class="success-decoration">
+                    <div class="rainbow-heart">🌈💖</div>
+                </div>
+                <button class="btn btn--primary" id="restartBtn">Start Over 💫</button>
+            </div>
+        </div>
+    </section>
+
+    <script src="app.js"></script>
+</body>
+</html>
